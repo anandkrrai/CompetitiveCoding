@@ -3,4 +3,4 @@ This Notebook contains Most frequently used Algorithm and concept used in Compet
 
 and some cool functions often used in competitive programming.
 
-All the codes are written in Python3
+All the codes are written in Python3 and Java 8
