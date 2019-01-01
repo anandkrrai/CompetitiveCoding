@@ -1,5 +1,6 @@
 package cc;
 
+import java.math.BigInteger;
 import java.util.*;
 
 class gfg_perfectSumProblem {
@@ -11,9 +12,8 @@ class gfg_perfectSumProblem {
 	}
 
 	public static void helper(int[] arr, int vidx, int k, int sum, String ans, HashMap<String, Boolean> map) {
-
 		if (k == sum) {
-			String key = ans.substring(0, ans.length() - 1) + ")";
+			String key = ans + ")";
 			if (map.containsKey(key))
 				return;
 			map.put(key, true);
@@ -33,6 +33,8 @@ class gfg_perfectSumProblem {
 
 		Scanner scan = new Scanner(System.in);
 
+		BigInteger bigInteger = new BigInteger("1232");
+		String str = bigInteger.multiply(bigInteger).toString();
 		int t = scan.nextInt();
 
 		while (t > 0) {
