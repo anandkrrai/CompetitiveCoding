@@ -7,7 +7,7 @@ public class gfg_RemoveCommonCharactersAndConcatinate {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-
+	
 		int t = scan.nextInt();
 		scan.nextLine();
 
