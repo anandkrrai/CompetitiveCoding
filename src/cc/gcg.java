@@ -10,6 +10,9 @@ public class gcg {
 	}
 
 	public static void main(String[] args) {
+		char ch ='a';
+		int a=ch;
+		System.out.println(a);
 
 		int[] arr = new int[2147483643];
 		
