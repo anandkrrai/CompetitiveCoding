@@ -225,12 +225,112 @@ public class GenericTree {
 			Node n = node.children.remove(i);
 			node.children.get(i - 1).children.add(n);
 		}
-		
+
 		for (Node child : node.children) {
 			linearise(child);
 		}
 
+	}
+
+	public static Node linearise_btr(Node root) {
+		if (root.children.size() == 0) {
+			return root;
+		}
+
+		Node ol = root.children.get(root.children.size() - 1);
+		Node alt = linearise_btr(ol);
+
+		while (root.children.size() > 1) {
+			Node sl = root.children.get(root.children.size() - 2);
+			Node sklTail = linearise_btr(sl);
+
+			Node ll = root.children.remove(root.children.size() - 1);
+
+			sklTail.children.add(ll);
+
+		}
+
+		return alt;
+	}
+
+	public static boolean isSimilar(Node root1, Node root2) {
+		if (root1.children.size() == root2.children.size()) {
+			for (int i = 0; i < root1.children.size(); ++i) {
+				Boolean rv = isSimilar(root1.children.get(i), root2.children.get(i));
+				if (rv == false) {
+					return false;
+				}
+			}
+		} else {
+			return false;
+		}
+
+		return true;
+	}
+
+	public static boolean isMirrorStructure(Node root1, Node root2) {
+		if (root1.children.size() == root2.children.size()) {
+			for (int i = 0; i < root1.children.size(); ++i) {
+				Boolean rv = isMirrorStructure(root1.children.get(i),
+						root2.children.get(root2.children.size() - i - 1));
+				if (rv == false) {
+					return false;
+				}
+			}
+		} else {
+			return false;
+		}
+
+		return true;
+
+	}
+
+	public static boolean isSymmetric(Node root) {
+		for (int i = 0; i < root.children.size() / 2; ++i) {
+
+			Node left = root.children.get(i);
+			Node right = root.children.get(root.children.size() - i - 1);
+
+			if (left.children.size() != right.children.size()) {
+				return false;
+			}
+		}
+		boolean rv = true;
+		for (Node child : root.children) {
+			rv &= isSymmetric(child);
+		}
+
+		return rv;
+	}
+
+	public static class Max_help {
+		int max = Integer.MIN_VALUE;
+		int secMax = Integer.MIN_VALUE;
+	}
+
+	public static void find_2nd_largest(Node root) {
+		Max_help help = new Max_help();
+
+		find2ndLargest(help, root);
+
+		System.out.println(help.secMax);
+	}
+
+	private static void find2ndLargest(Max_help help, Node root) {
+		if (root == null)
+			return;
 		
+		for(Node child : root.children) {
+			if(child.data>help.max) {
+				help.secMax=help.max;
+				help.max=child.data;
+			}else if(child.data>help.secMax) {
+				help.secMax=child.data;
+			}
+		}
+		for(Node child : root.children) {
+			find2ndLargest(help,child);
+		}	
 	}
 
 	public static void main(String[] args) {
@@ -238,7 +338,12 @@ public class GenericTree {
 		ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110,
 				-1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1, -1));
 
+		ArrayList<Integer> list2 = new ArrayList<Integer>(Arrays.asList(10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110,
+				-1, 120, -1, -1, 90, -1, -1, 40, 100, -1, 200, -1, -1, -1));
+
 		Node root = construct(list);
+		Node root2 = construct(list);
+
 //		display(root);
 //		System.out.println(size(root));
 //		System.out.println(find(root, 90));
@@ -263,12 +368,21 @@ public class GenericTree {
 //		remove_leave(root);
 //		System.out.println("=>>>>>>>>>>>>>>>>>>>>>>...................");
 //		display(root);
-		
-		display(root);
-		linearise(root);
-		System.out.println("=>>>>>>>>>>>>>>>>>>>>>>...................");
 
-		display(root);
+//		display(root);
+//		linearise_btr(root);
+//		System.out.println("=>>>>>>>>>>>>>>>>>>>>>>...................");
+//
+//		display(root);
+
+//		mirror(root2);
+//		System.out.println(isMirrorStructure(root, root2));
+//		display(root2);
+//		Node root3 = construct(list2);
+//
+//		System.out.println(isSymmetric(root3));
+		
+		find_2nd_largest(root);
 
 	}
 
