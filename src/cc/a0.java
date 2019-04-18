@@ -34,19 +34,21 @@ public class a0 {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 6, 2, 6, 3, 6, 3, 3, 2, 1, 23, 5 };
 
-		for (int x : arr) {
-			System.out.print(x + " ");
-		}
-
-		System.out.println();
-//		pivoitSort(arr, arr.length - 1, 0);
-		pivoitSort(arr, 0, arr.length - 1);
-
-		for (int x : arr) {
-			System.out.print(x + " ");
-		}
+		System.out.println(8 | -8);
+//		int[] arr = { 1, 6, 2, 6, 3, 6, 3, 3, 2, 1, 23, 5 };
+//
+//		for (int x : arr) {
+//			System.out.print(x + " ");
+//		}
+//
+//		System.out.println();
+////		pivoitSort(arr, arr.length - 1, 0);
+//		pivoitSort(arr, 0, arr.length - 1);
+//
+//		for (int x : arr) {
+//			System.out.print(x + " ");
+//		}
 	}
 
 }
