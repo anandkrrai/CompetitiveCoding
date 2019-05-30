@@ -66,9 +66,9 @@ public class a {
 			}
 		}
 		int size = arr.length;
-		double minu = (double)(minus / size);
-		double zer = (double)(zero / size);
-		double pos = (double)(one / size);
+		double minu = (double) (minus / size);
+		double zer = (double) (zero / size);
+		double pos = (double) (one / size);
 // double x = (double)2/3;
 		// System.out.println(x);
 		System.out.println(minu);
@@ -81,11 +81,16 @@ public class a {
 	private static final String str = "anand";
 
 	public static void main(String[] args) {
-		double x = (double) 2 / 3;
-		System.out.println(x);
+//
+//		for (int i = 0; i < 10; ++i) {
+//			System.out.println(i);
+//		}
 
-		int[] arr = { -4, 3, -9, 0, 4, 1 };
-		plusMinus(arr);
+//		double x = (double) 2 / 3;
+//		System.out.println(x);
+//
+//		int[] arr = { -4, 3, -9, 0, 4, 1 };
+//		plusMinus(arr);
 
 //		String str = "hackerearth hackathons";
 //		StringTokenizer val = new StringTokenizer(str, "h");
@@ -122,5 +127,26 @@ public class a {
 //		checkMagazine(magazine, note);
 //
 //		scanner.close();
+
+		Scanner scan = new Scanner(System.in);
+		int t = scan.nextInt();
+		while (t-- > 0)
+			
+		{
+			int n = scan.nextInt();
+			int[] arr = new int[n];
+			for (int i = 0; i < n; ++i) {
+				arr[i] = scan.nextInt();
+
+			}
+
+			Arrays.sort(arr);
+			int min = arr[1] - arr[0];
+			for (int i = 2; i < n; ++i) {
+				min = Math.min(min, arr[i] - arr[i - 1]);
+			}
+
+			System.out.println(min);
+		}
 	}
 }

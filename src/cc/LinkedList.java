@@ -251,6 +251,9 @@ public class LinkedList {
 
 	// on
 	public void reversePointerRecursive() {
+		if (head == null)
+			return;
+
 		reversePointerRecursiveHelper(head);
 
 		Node temp = head;

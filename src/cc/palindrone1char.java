@@ -21,8 +21,17 @@ public class palindrone1char {
 		return -1;
 	}
 
+	public static boolean isPalin(String str) {
+		for (int i = 0; i < str.length() / 2; ++i) {
+			if (str.charAt(i) != str.charAt(str.length() - i - 1))
+				return false;
+		}
+		return true;
+	}
+
 	public static void main(String[] args) {
 
+		System.out.println(isPalin("793397"));
 		System.out.println(palindromeIndex("hgygsvlfcwnswtuhmyaljkqlqjjqlqkjlaymhutwsnwcwflvsgygh"));
 	}
 
