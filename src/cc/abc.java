@@ -18,7 +18,16 @@ public class abc implements int1, int2 {
 	}
 
 	public static void main(String[] args) {
-//		System.out.println(i);
+//		12.9762,77.6033
+
+		
+		String apiKey = "4d0cdac4d803d375e6083aae29de3eed";
+		String requestEndpoint = "https://openweathermap.org/data/2.5/forecast?lat=" + 12.9762 + "&long=" + 77.6033
+				+ "&appid=" + apiKey;
+
+		System.out.println(requestEndpoint);
+		
+		//		System.out.println(i);
 
 //		byte b = 10;
 //		byte a = 6;

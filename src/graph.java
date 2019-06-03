@@ -1,7 +1,5 @@
 import java.util.*;
 
-import javafx.scene.layout.Priority;
-
     public class graph{
 
         public static class Edge{
