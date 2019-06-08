@@ -1,4 +1,7 @@
+/StringRotationAnagram.class
 /cc/
+/compare2StringAfterDeletion.class
+/crioCode.class
 /graph$1.class
 /graph$Bi_partrite_helper.class
 /graph$DiaxtraHElper.class
@@ -10,5 +13,10 @@
 /graph$primsHelper.class
 /graph.class
 /hh/
+/nextGreater.class
+/nextGreaterElementInLinkedList.class
 /pep/
 /vs_workspace/
+/mergeKsortedLinkList.class
+/mergeKsortedLinkList$1.class
+/mergeKsortedLinkList$ListNode.class
