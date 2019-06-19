@@ -15,32 +15,27 @@ public class KthSmallest {
 		Comparator<Pair> cmp = new Comparator<Pair>() {
 
 			public int compare(Pair p1, Pair p2) {
-				Double d1 = (double) (p1.num / p1.den);
-				Double d2 = (double) (p2.num / p2.den);
+				Double d1 = (double) (p1.num * 1.0 / p1.den);
+				Double d2 = (double) (p2.num * 1.0 / p2.den);
 
-//				return d1.compareTo(d2);
-				if (d1 > d2) {
-					return 1;
-				}else if(d1<d1) {
-					return -1;
-				}else {
-					return 0;
-				}
+				return d1.compareTo(d2);
+
 			}
 		};
 
+		Arrays.sort(A);
 		PriorityQueue<Pair> q = new PriorityQueue<Pair>(cmp);
 
-
 		for (int i = 0; i < A.length; ++i) {
-			for (int j = 0; j < A.length; ++j) {
+			for (int j = i + 1; j < A.length; ++j) {
+
 				Pair pair = new Pair(A[i], A[j]);
 				q.add(pair);
 			}
 		}
 
 		Pair p = null;
-		while (q.size() > 0) {
+		while (K-- > 0) {
 			p = q.remove();
 			Double x = (double) p.num / p.den;
 			System.out.println(p.num + "/" + p.den + "   " + x);
