@@ -64,6 +64,7 @@ class Main {
 		for (int i = 0; i < N; i++) {
 			arr[i] = sc.nextInt();
 		}
+	
 		sortByFreq(arr, N);
 	}
 }

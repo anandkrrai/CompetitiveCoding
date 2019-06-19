@@ -1,3 +1,4 @@
+import java.util.HashMap;
 
 public class subarrayWithSumk {
 	static int subarraysDivByK(int arr[], int target) {
