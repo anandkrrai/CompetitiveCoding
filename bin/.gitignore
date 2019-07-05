@@ -1,7 +1,9 @@
+/arraysAndstrings/
+/carPooling.class
+/cc/
 /Main$1.class
 /Main$Pair.class
 /Main.class
-/cc/
 /checkWord.class
 /compare2StringAfterDeletion.class
 /connectRopes.class
@@ -50,6 +52,7 @@
 /pep/
 /ping$RecentCounter.class
 /ping.class
+/rangeQuery/
 /removeOuterMostParenthesis.class
 /reversekGroup.class
 /shortestArrayWithSumK.class
@@ -68,6 +71,3 @@
 /twoStacksInAray.class
 /validString.class
 /vs_workspace/
-/arraysAndstrings/
-/SqrDecomposition/
-/rangeQuery/
