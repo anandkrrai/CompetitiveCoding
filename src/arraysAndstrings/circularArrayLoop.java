@@ -18,7 +18,8 @@ public class circularArrayLoop {
 				in = (in + nums[in] + nums.length) % nums.length;
 				if (i == in)
 					return true;
-				set.add(i);
+				
+				set.add(in);
 			}
 		}
 		return false;
