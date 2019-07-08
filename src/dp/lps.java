@@ -2,7 +2,7 @@ package dp;
 
 public class lps {
 
-	public static int lps(String str) {
+	public static int lps1(String str) {
 		int[][] dp = new int[str.length()][str.length()];
 
 		for (int gap = 0; gap < str.length(); ++gap) {
@@ -21,8 +21,8 @@ public class lps {
 	}
 
 	public static void main(String[] args) {
-		String str = "abccbc";
-		System.out.println(lps(str));
+		String str = "abccccdd";
+		System.out.println(lps1(str));
 	}
 
 }
