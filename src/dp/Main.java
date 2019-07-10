@@ -77,7 +77,7 @@ public class Main {
 			return grid[r1][c1];
 		}
 
-		int f1 = -10, f2 = 0, f3 = 0, f4 = 0;
+		int f1 = -10, f2 = -10, f3 = -10, f4 = -10;
 		if (isValid(grid, r1 + 1, c1, r2 + 1))
 			f1 = cherryPickupHelp(grid, r1 + 1, c1, r2 + 1, dp); // DD
 		if (isValid(grid, r1, c1 + 1, r2))
