@@ -34,6 +34,7 @@ public class btlevelOrder {
 					temp.addLast(node.right);
 			}
 			q = temp;
+			temp.clear();
 			rv.add(list);
 		}
 

@@ -5,6 +5,7 @@ public class Main {
 
 		StringBuilder sb = new StringBuilder("anand");
 		sb.reverse();
+		Integer.toBinaryString(N)
 		System.out.println(sb);
 	}
 }
