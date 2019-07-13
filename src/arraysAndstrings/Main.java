@@ -1,10 +1,26 @@
 package arraysAndstrings;
 
+import java.util.Collections;
+import java.util.PriorityQueue;
+import java.util.Stack;
+
 public class Main {
 	public static void main(String[] args) {
 
+		PriorityQueue<Integer> q = new PriorityQueue<Integer>(Collections.reverseOrder());
+		q.add(5);
+		q.add(15);
+		q.add(25);
+		q.add(35);
+		q.add(45);
+		q.add(1);
+
+		while (q.size() != 0)
+			System.out.println(q.remove());
+
 		StringBuilder sb = new StringBuilder("anand");
 		sb.reverse();
+		sb.replace(0, sb.length()-3, "wtf is going on ");
 		System.out.println(sb);
 
 	}
