@@ -6,22 +6,26 @@ import java.util.Stack;
 
 public class Main {
 	public static void main(String[] args) {
+		
+		Integer integer = new Integer("1");
+		System.out.println(integer.SIZE);
+		System.out.println(Byte.SIZE);
 
-		PriorityQueue<Integer> q = new PriorityQueue<Integer>(Collections.reverseOrder());
-		q.add(5);
-		q.add(15);
-		q.add(25);
-		q.add(35);
-		q.add(45);
-		q.add(1);
-
-		while (q.size() != 0)
-			System.out.println(q.remove());
-
-		StringBuilder sb = new StringBuilder("anand");
-		sb.reverse();
-		sb.replace(0, sb.length()-3, "wtf is going on ");
-		System.out.println(sb);
+//		PriorityQueue<Integer> q = new PriorityQueue<Integer>(Collections.reverseOrder());
+//		q.add(5);
+//		q.add(15);
+//		q.add(25);
+//		q.add(35);
+//		q.add(45);
+//		q.add(1);
+//
+//		while (q.size() != 0)
+//			System.out.println(q.remove());
+//
+//		StringBuilder sb = new StringBuilder("anand");
+//		sb.reverse();
+//		sb.replace(0, sb.length()-3, "wtf is going on ");
+//		System.out.println(sb);
 
 	}
 
