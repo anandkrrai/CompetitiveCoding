@@ -1,8 +1,9 @@
 package arraysAndstrings;
 
 public class calculator {
+	public static final int MUL = 3, ADD = 1, DIV = 4, SUB = 2;
 
-	public static  int calc(int first, int second, int operator) {
+	public static int calc(int first, int second, int operator) {
 		switch (operator) {
 		case ADD: {
 			return first + second;
@@ -22,9 +23,7 @@ public class calculator {
 		}
 	}
 
-	public static final int MUL = 3, ADD = 1, DIV = 4, SUB = 2;
-
-	public static  int calculate(String s) {
+	public static int calculate(String s) {
 		String str = "";
 		int op = -1, first = 0;
 		for (int i = 0; i < s.length(); ++i) {
@@ -69,6 +68,8 @@ public class calculator {
 				str = "";
 			}
 		}
+		first = calc(first, Integer.parseInt(str), op);
+
 		return first;
 	}
 
