@@ -19,7 +19,7 @@ public class Trie {
 	}
 
 	private void addWord(Node node, String word) {
-		if(word.length() == 0){
+		if (word.length() == 0) {
 			node.eow = true;
 			numWords++;
 			return;
@@ -34,11 +34,11 @@ public class Trie {
 			addWord(child, ros);
 		} else {
 			numNodes++;
-			
+
 			child = new Node();
 			child.data = ch;
 			node.children.put(ch, child);
-			
+
 			addWord(child, ros);
 		}
 	}
@@ -48,22 +48,22 @@ public class Trie {
 	}
 
 	private void removeWord(Node node, String word) {
-		if(word.length() == 0){
+		if (word.length() == 0) {
 			numWords--;
 			node.eow = false;
 			return;
 		}
-		
+
 		char ch = word.charAt(0);
 		String ros = word.substring(1);
 
 		Node child = node.children.get(ch);
-		
-		if(child != null){
+
+		if (child != null) {
 			removeWord(child, ros);
-			
+
 			// neither end of word nor part of any
-			if(child.eow == false && child.children.size() == 0){
+			if (child.eow == false && child.children.size() == 0) {
 				numNodes--;
 				node.children.remove(ch);
 			}
@@ -72,49 +72,41 @@ public class Trie {
 			return;
 		}
 	}
-	
+
 	public boolean searchWord(String word) {
 		return searchWord(root, word);
 	}
 
 	private boolean searchWord(Node node, String word) {
-		if(word.length() == 0){
+		if (word.length() == 0) {
 			return node.eow;
 		}
-		
+
 		char ch = word.charAt(0);
 		String ros = word.substring(1);
 
 		Node child = node.children.get(ch);
-		
-		if(child != null){
+
+		if (child != null) {
 			return searchWord(child, ros);
 		} else {
 			return false;
 		}
 	}
-	
-	public void display(){
+
+	public void display() {
 		display(root, "");
 	}
 
 	private void display(Node node, String osf) {
-		if(node.eow){
+		if (node.eow) {
 			System.out.println(osf);
 		}
-		
+
 		ArrayList<Character> keys = new ArrayList<>(node.children.keySet());
-		for(Character key: keys){
+		for (Character key : keys) {
 			Node child = node.children.get(key);
 			display(child, osf + key);
 		}
-	
 	}
-	
 }
-	
-	
-	
-	
-	
-	
