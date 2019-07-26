@@ -31,11 +31,11 @@ public class permute {
 		permutation(arr, 0, arr.length - 1);
 	}
 
-
 	public static void permutation(int[] arr, int left, int right, List<List<Integer>> list) {
 		if (left == right) {
-//			list.add(Arrays.asList(arr));
-			List<Integer> lis = Arrays.asList(arr);
+			List<Integer> lis = new ArrayList<Integer>();
+			for (int val : arr)
+				lis.add(val);
 			list.add(lis);
 			return;
 		}

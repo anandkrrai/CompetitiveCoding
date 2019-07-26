@@ -3,30 +3,28 @@ package greedy;
 public class completeCircuit {
 
 	public static int canCompleteCircuit(int[] gas, int[] cost) {
-		int res = 0, j = 0;
+		int reserve = 0, j = 0;
 
 		for (int i = 0; i < gas.length;) {
-			res = 0;
+			reserve = 0;
 			j = i;
-			while (res + gas[j] - cost[j] > 0) {
-				res = res + gas[j] - cost[j];
+			while (reserve > 0) {
+				if (reserve < 0)
+					break;
+				reserve = reserve + gas[j] - cost[j];
 				++j;
 				j = j % gas.length;
 				if (j == i)
-					return 1;
+					return i;
 			}
-			if (j > i) {
-				i = j;
-			} else {
-				++i;
-			}
+			i = j;
 		}
 		return -1;
 	}
 
 	public static void main(String[] args) {
-		int[] gas = { 1, 2, 3, 4, 5 };
-		int[] cost = { 3, 4, 5, 1, 2 };
+		int[] gas = { 3, 3, 4 };
+		int[] cost = { 3, 4, 4 };
 
 		System.out.println(canCompleteCircuit(gas, cost));
 	}
