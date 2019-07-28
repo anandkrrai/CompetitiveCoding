@@ -58,7 +58,7 @@ public class lock {
 		if (rv != Integer.MAX_VALUE)
 			rv += 1;
 
-//		visited.remove(curr);
+		visited.remove(curr);
 		return rv;
 	}
 

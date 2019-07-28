@@ -3,6 +3,17 @@ package tree;
 import java.util.*;
 
 public class naryTreeLvlOrder {
+	public class Node {
+		int val;
+		ArrayList<Node> children;
+		Node right;
+
+		Node(int x) {
+			val = x;
+			children = new ArrayList<Node>();
+		}
+	}
+
 	public List<List<Integer>> levelOrder(Node root) {
 		List<List<Integer>> rv = new ArrayList<>();
 
@@ -17,7 +28,7 @@ public class naryTreeLvlOrder {
 			ArrayList<Integer> list = new ArrayList<>();
 			while (q.size() != 0) {
 				Node node = q.removeFirst();
-				list.addLast(node.val);
+				list.add(node.val);
 
 				for (Node child : node.children)
 					temp.addLast(child);

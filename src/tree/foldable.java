@@ -2,6 +2,16 @@ package tree;
 
 public class foldable {
 
+	public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int x) {
+			val = x;
+		}
+	}
+	
 	public boolean isFoldable(TreeNode root) {
 		return sym(root, root);
 	}
