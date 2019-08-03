@@ -1,12 +1,13 @@
 package hh;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class digitPairs {
 
 	public static int getBit(int n) {
-
+		
 		int ones = n % 10;
 		n /= 10;
 		int tens = n % 10;
@@ -35,6 +36,8 @@ public class digitPairs {
 	}
 
 	public static void main(String[] args) {
+		int o = 8;
+		System.out.println(o & (-o));
 		Scanner sc = new Scanner(System.in);
 		HashMap<Character, Integer> even = new HashMap<>();
 		HashMap<Character, Integer> odd = new HashMap<>();
