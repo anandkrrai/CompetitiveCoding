@@ -20,7 +20,10 @@ public class TcsDir {
 	}
 
 	public static void main(String[] args) {
-		findDir(2000);
+		for(int i=0 ;i<1001;++i) {
+			findDir(i);
+		}
+//		findDir(2000);
 	}
 
 }
