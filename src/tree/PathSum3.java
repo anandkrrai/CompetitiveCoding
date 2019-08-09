@@ -46,16 +46,17 @@ public class PathSum3 {
 			return 0;
 
 		int rv = 0;
-		if (sum + root.val == target) {
-			rv = 1;
-			System.out.println(root.val);
-		}
 
 		rv += sum(root.left, sum + root.val, target);
 		rv += sum(root.right, sum + root.val, target);
 		rv += sum(root.left, root.val, target);
 		rv += sum(root.right, root.val, target);
 
+		if (sum + root.val == target) {
+			rv ++;
+			System.out.println(root.val);
+		}
+		
 		return rv;
 	}
 }

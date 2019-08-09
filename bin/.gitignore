@@ -1,3 +1,8 @@
+/alternateCharacterds$1.class
+/alternateCharacterds$Pair.class
+/alternateCharacterds.class
+/arraysAndstrings/
+/carPooling.class
 /cc/
 /checkWord.class
 /compare2StringAfterDeletion.class
@@ -24,9 +29,6 @@
 /greatest_left.class
 /greedy/
 /hh/
-/Main$1.class
-/Main$Pair.class
-/Main.class
 /identicalLinkedList.class
 /islInkedListPalindrome$HeapMover.class
 /islInkedListPalindrome.class
@@ -53,6 +55,9 @@
 /nextSmaller.class
 /numberToString.class
 /pep/
+/Main$1.class
+/Main$Pair.class
+/Main.class
 /ping$RecentCounter.class
 /ping.class
 /rangeQuery/
@@ -75,4 +80,3 @@
 /twoStacksInAray.class
 /validString.class
 /vs_workspace/
-/arraysAndstrings/

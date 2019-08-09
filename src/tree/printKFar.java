@@ -23,6 +23,7 @@ public class printKFar {
 	public int traverse(TreeNode root, List<Integer> list, TreeNode target, int k) {
 		if (root == null)
 			return -1;
+		
 		if (root.val == target.val) {
 			printKDown(root, null, k, list);
 			return 0;
