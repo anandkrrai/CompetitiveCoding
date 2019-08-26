@@ -127,6 +127,9 @@ public class a {
 //		checkMagazine(magazine, note);
 //
 //		scanner.close();
+		
+//		StringBuilder
+//		String
 
 		Scanner scan = new Scanner(System.in);
 		int t = scan.nextInt();

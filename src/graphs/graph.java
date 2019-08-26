@@ -411,6 +411,54 @@ public class graph {
 		return true;
 	}
 
+	public boolean isBipartite(int[][] graph) {
+		LinkedList<Pair> q = new LinkedList<>();
+
+		int[] arr = new int[graph.length];
+		Arrays.fill(arr, -1);
+
+		if (graph.length <= 2)
+			return true;
+
+		for (int ver = 0; ver < graph.length; ++ver) {
+
+			if (arr[ver] != -1)
+				continue;
+
+			Pair p = new Pair(0, ver);
+			q.addLast(p);
+
+			while (q.size() != 0) {
+				Pair rem = q.removeFirst();
+
+				if (arr[rem.vertex] == -1) {
+					arr[rem.vertex] = rem.level % 2;
+				} else if (arr[rem.vertex] == rem.level % 2) {
+					continue;
+				} else if (arr[rem.vertex] != rem.level % 2) {
+					return false;
+				}
+
+				for (int i = 0; i < graph[rem.vertex].length; ++i) {
+					if (graph[rem.vertex][i] != 0)
+						q.addLast(new Pair(rem.level + 1, graph[rem.vertex][i]));
+				}
+			}
+		}
+
+		return true;
+	}
+
+	public static class Pair {
+		int vertex;
+		int level;
+
+		Pair(int level, int vertex) {
+			this.level = level;
+			this.vertex = vertex;
+		}
+	}
+
 	// don't refer this
 	public static boolean Bi_partrite(ArrayList<ArrayList<Edge>> graph, int src) {
 		HashMap<Integer, Boolean> map = new HashMap<>();
@@ -695,9 +743,7 @@ public class graph {
 		int[] res = new int[graph.size()];
 		Arrays.fill(res, Integer.MAX_VALUE);
 		res[src] = 0;
-
 		ArrayList<Kedge> alledges = new ArrayList<>();
-
 		for (int v = 0; v < graph.size(); ++v) {
 			for (int n = 0; n < graph.get(v).size(); ++n) {
 				Edge ne = graph.get(v).get(n);
@@ -705,7 +751,6 @@ public class graph {
 				alledges.add(ke);
 			}
 		}
-
 		for (int i = 0; i < graph.size() - 1; ++i) {
 			for (int j = 0; j < alledges.size(); ++j) {
 				Kedge ke = alledges.get(j);
@@ -725,7 +770,6 @@ public class graph {
 					res[ke.v2] = res[ke.v1] + graph.get(ke.v1).get(ke.v2).wt;
 				}
 			}
-
 		}
 
 	}
