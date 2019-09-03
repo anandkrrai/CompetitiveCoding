@@ -1,7 +1,5 @@
 package rangeQuery;
 
-import rangeQuery.segmentTreeSupportClass.SumOperator;
-
 public class SegmentTree {
 
 	public static class STree {
