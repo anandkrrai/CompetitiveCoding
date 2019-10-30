@@ -3,8 +3,11 @@ public class ZAlgo {
 
 	public static void main(String[] args) {
 		
-		String str = "aabxaabxcaabxaabxay";
+		String str = "aab%aabxaabxcaabxaabxay";
+		for(int i=0;i<str.length();++i)
+			System.out.print(str.charAt(i)+" ");
 		int[] arr = zValues(str);
+		System.out.println();
 		for (int val : arr)
 			System.out.print(val + " ");
 	}
