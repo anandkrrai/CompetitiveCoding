@@ -11,7 +11,34 @@ public class smallString {
 		}
 	}
 
+	String ans;
+
 	public String smallestFromLeaf(TreeNode root) {
+		ans = "";
+		dfs(root, new StringBuilder(""));
+		return ans;
+	}
+
+	public void dfs(TreeNode node, StringBuilder sb) {
+		if (node == null)
+			return;
+		sb.append((char) ('a' + node.val));
+
+		if (node.left == null && node.right == null) {
+			sb.reverse();
+			String S = sb.toString();
+			sb.reverse();
+
+			if (S.compareTo(ans) < 0)
+				ans = S;
+		}
+
+		dfs(node.left, sb);
+		dfs(node.right, sb);
+		sb.deleteCharAt(sb.length() - 1);
+	}
+
+	public String smallestFromLeaf1(TreeNode root) {
 		if (root == null) {
 			return "";
 		} else if (root.left == null && root.right == null) {

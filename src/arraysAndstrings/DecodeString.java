@@ -1,27 +1,28 @@
 package arraysAndstrings;
 
-public class DecodeString {
-	public String decodeString(String s) {
-		String str = "", num = "";
-		StringBuilder rv = new StringBuilder("");
-		for (int i = 0; i < s.length(); ++i) {
-			char ch = s.charAt(i);
+import java.util.*;
 
-			if (ch >= '0' && ch <= '9') {
-				num += ch;
+public class DecodeString {
+
+	public static String DecodeString(String str) {
+		Stack<String> strStack = new Stack<String>();
+		Stack<String> intStack = new Stack<String>();
+		strStack.push("");
+		StringBuilder sb = new StringBuilder(""), sb1 = new StringBuilder("");
+
+		for (char ch : str.toCharArray()) {
+			if (Character.isAlphabetic(ch)) {
+				String s = stack.pop();
+				stack.push(s+ch);
 			} else if (ch == '[') {
-				str = "";
+
 			} else if (ch == ']') {
-				int n = Integer.parseInt(num);
-				num = "";
-				for (int j = 0; j < n; ++j) {
-					rv.append(str);
-				}
+
 			} else {
-				str += ch;
+
 			}
 		}
-		return rv.toString();
-	}
 
+		return stack.pop();
+	}
 }
