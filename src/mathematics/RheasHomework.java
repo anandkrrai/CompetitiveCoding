@@ -1,5 +1,6 @@
 package mathematics;
 
+import java.math.*;
 import java.util.*;
 
 public class RheasHomework {
@@ -38,6 +39,13 @@ public class RheasHomework {
 			System.out.print(rv[i] + " ");
 		}
 		s.close();
+	}
+
+	long modinverse(int a, int b) {
+		BigInteger temp = BigInteger.valueOf(a);
+		temp = temp.modInverse(BigInteger.valueOf(b));
+		return temp.longValue();
+
 	}
 
 	public static long fact(int n, long[] memo) {
