@@ -3,6 +3,7 @@ package hh;
 import java.util.Scanner;
 
 public class primeNUmb1001th {
+	
 
 	public static void sieve(boolean[] arr) {
 		arr[0] = arr[1] = true;

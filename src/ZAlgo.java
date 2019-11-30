@@ -1,4 +1,3 @@
-
 public class ZAlgo {
 
 	public static void main(String[] args) {

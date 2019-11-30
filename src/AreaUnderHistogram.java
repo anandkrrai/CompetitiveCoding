@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class AreaUnderHistogram {
 
@@ -33,8 +34,31 @@ public class AreaUnderHistogram {
 		return maxArea;
 	}
 
+	public static int area(int[] arr) {
+		int area = 0, i = 0;
+		Stack<Integer> stack = new Stack<>();
+		while (i < arr.length) {
+			if (stack.isEmpty() || arr[stack.peek()] <= arr[i]) {
+				stack.push(i++);
+			} else {
+				int tp = stack.pop();
+				int ar = arr[tp] * (stack.isEmpty() ? i : i - stack.peek() - 1);
+				area = Math.max(ar, area);
+			}
+		}
+
+		while (stack.size() > 0) {
+			int tp = stack.pop();
+			int ar = arr[tp] * (stack.isEmpty() ? i : i - stack.peek() - 1);
+			area = Math.max(ar, area);
+
+		}
+
+		return area;
+	}
+
 	public static void main(String[] args) {
-		int hist[] = { 6, 2, 5, 4, 5, 1, 6 };
+		int hist[] = { 1, 1, 6 };
 		System.out.println("Maximum area is " + maxArea(hist));
 
 	}
