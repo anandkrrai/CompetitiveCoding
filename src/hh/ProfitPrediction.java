@@ -85,36 +85,5 @@ public class ProfitPrediction {
 		}
 	}
 
-	class Solution {
-		public int countShips(Sea sea, int[] topRight, int[] bottomLeft) {
-			if (topRight[0] == bottomLeft[0] && topRight[1] == bottomLeft[1])
-				return 1;
-
-			int midx = (topRight[0] + bottomLeft[0]) / 2;
-			int midy = (topRight[1] + bottomLeft[1]) / 2;
-			int count = 0;
-			int[] arr = { midx, midy };
-
-			if (sea.hasShips(sea, arr, bottomLeft))
-				count += countShips(sea, arr, bottomLeft);
-			if (sea.hasShips(sea, topRight, arr))
-				count += countShips(sea, topRight, arr);
-			arr[0] = topRight[0];
-			arr[1] = midy;
-			int arr2[] = { midx, bottomLeft[1] };
-
-			if (sea.hasShips(sea, arr, arr2))
-				count += sea.hasShips(sea, arr, arr2);
-
-			arr[0] = midx;
-			arr[1] = topRight[0];
-			arr2[0] = bottomLeft[0];
-			arr2[1] = midy;
-
-			if (sea.hasShips(sea, arr, arr2))
-				count += sea.hasShips(sea, arr, arr2);
-
-			return count;
-		}
-	}
+	
 }

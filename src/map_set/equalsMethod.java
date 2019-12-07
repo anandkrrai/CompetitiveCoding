@@ -25,6 +25,7 @@ public class equalsMethod {
 			}
 		}
 	}
+	
 
 	public static void main(String args[]) throws Exception {
 		abc a = new abc(1);
