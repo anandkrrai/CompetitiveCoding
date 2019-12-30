@@ -1,3 +1,11 @@
+/EquivalenceClassTesting.class
+/ExtraElement.class
+/FourSum.class
+/FourSum2.class
+/GenericTree$HeapMover.class
+/GenericTree$Node.class
+/GenericTree$PreOPair.class
+/GenericTree.class
 /ICPC$Pair.class
 /ICPC.class
 /IPO$1.class
@@ -16,6 +24,7 @@
 /MakeAllSubSet.class
 /MaxDistance.class
 /MaxTime.class
+/MedianInWindowSizeK.class
 /MergeKsortedLinkedList.class
 /MinStackO1.class
 /ModularNodes.class
@@ -141,4 +150,3 @@
 /twoStacksInAray.class
 /validString.class
 /vs_workspace/
-/MedianInWindowSizeK.class
