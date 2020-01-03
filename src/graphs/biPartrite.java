@@ -25,6 +25,7 @@ public class biPartrite {
 
 		for (int[] edge : dislikes) {
 			graph.get(edge[0]).add(edge[1]);
+			graph.get(edge[1]).add(edge[0]);
 		}
 
 		LinkedList<Pair> q = new LinkedList<>();
@@ -47,7 +48,6 @@ public class biPartrite {
 				arr[rem.src] = rem.level % 2;
 				for (int nbr : graph.get(rem.src))
 					q.addLast(new Pair(nbr, rem.level + 1));
-
 			}
 		}
 		return true;

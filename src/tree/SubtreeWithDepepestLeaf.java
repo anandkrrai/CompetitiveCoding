@@ -1,6 +1,17 @@
 package tree;
 
 public class SubtreeWithDepepestLeaf {
+
+	public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int x) {
+			val = x;
+		}
+	}
+
 	public int getDepth(TreeNode node) {
 		if (node == null) {
 			return 0;
@@ -36,5 +47,7 @@ public class SubtreeWithDepepestLeaf {
 		}
 
 	}
+
+	
 
 }
