@@ -35,7 +35,7 @@ public class PowerSet {
 	}
 
 	public static void main(String[] args) {
-
+		System.out.println(Integer.MAX_VALUE + Integer.MIN_VALUE);
 		int[] arr = { 1, 2, 2, 2, 3 };
 		subsetsWithDup(arr);
 	}
