@@ -50,20 +50,37 @@ public class MakingALargeIsland {
 
 	public int largestIsland(int[][] grid) {
 		int mark = 1;
+		int max = 0;
+
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		int[][] dp = new int[grid.length][grid[0].length];
+		
 		for (int i = 0; i < grid.length; ++i) {
 			for (int j = 0; j < grid[0].length; ++j) {
 				if (grid[i][j] == 1 && dp[i][j] == 0) {
 					int size = bfs(grid, dp, i, j, mark);
 					map.put(mark, size);
 					++mark;
+					max = Math.max(max, size);
 				}
 			}
 		}
-		int max = 0;
+		
 		for (int i = 0; i < dp.length; ++i) {
 			for (int j = 0; j < dp[0].length; ++j) {
+				int temp = 1;
+				HashSet<Integer> set = new HashSet<>();
+				for (int[] dir : dirs) {
+					int nr = i + dir[0];
+					int nc = j + dir[1];
+
+					if (isValid(nr, nc, dp) && !set.contains(dp[nr][nc])) {
+						temp += map.get(dp[nr][nc]);
+						set.add(dp[nr][nc]);
+					}
+
+				}
+				max = Math.max(max, temp);
 			}
 		}
 		return max;

@@ -6,6 +6,12 @@ public class topologicalSortAdjacencyMatrix {
 
 	public static void main(String[] args) {
 
+		String str = "\\/";
+		System.out.println(str.length());
+		System.out.println(str.charAt(0));
+		System.out.println(str.charAt(1));
+		System.out.println(str.charAt(2));
+
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		int m = scan.nextInt();
