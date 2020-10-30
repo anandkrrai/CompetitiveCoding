@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="black">#000000</color>
+    <color name="lightorange">#fdf2df</color>
+    <color name="lightorangedark">#ebd6ab</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+    <color name="material_green_50">#E8F5E9</color>
+    <color name="material_green_500">#4CAF50</color>
+    <color name="material_green_700">#388E3C</color>
+    <color name="material_green_a200">#69F0AE</color>
+    <color name="material_lime_a700">#AEEA00</color>
+    <color name="material_purple_a700">#AA00FF</color>
+
+    <color name="material_black_700">#201010</color>
+    <color name="material_black_a200">#b2b2b2</color>
+    <color name="material_black_500">#374863</color>
+    <color name="material_blacklime_a700">#d7c797</color>
+    <color name="material_black_50">#b5b4bb</color>
+    <color name="red">#ff0000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="backdrop_blur_start">#00ffffff</color><color name="backdrop_blur_end">#ffffffff</color>
+
+</resources>

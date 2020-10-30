@@ -1,0 +1,28 @@
+# Gradlisms
+.gradle
+/local.properties
+
+# Android Studio
+/.idea
+
+# OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Android Applications
+*.apk
+*.ap_
+
+# Android Libraries
+*.aar
+*.apklib
+
+# Compiled Source
+*.dex
+*.class
+
+# Outputs
+/build
+/captures

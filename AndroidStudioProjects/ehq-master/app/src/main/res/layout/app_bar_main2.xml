@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_gravity="bottom|end|center_vertical"
+            android:background="@color/black"
+            android:gravity="end"
+            android:textAlignment="gravity"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="160sp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/logo"
+                    android:contentDescription="@string/logo" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="39dp"
+                    android:layout_height="32dp"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_gravity="top"
+                    android:layout_toStartOf="@+id/searchmic"
+                    android:contentDescription="@string/micButton"
+                    android:foregroundGravity="right"
+                    app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+                <ImageView
+                    android:id="@+id/searchmic"
+                    android:layout_width="40dp"
+                    android:layout_height="33dp"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="11dp"
+                    android:contentDescription="@string/searchButton"
+                    android:foregroundGravity="right"
+                    android:src="@android:drawable/ic_menu_search" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="top"
+            android:layout_weight="0"
+            android:background="@color/black"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#f00"
+            app:tabMinWidth="150sp"
+            app:tabMode="scrollable"
+            app:tabTextAppearance="@style/CustomTextStyle">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/home"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:elevation="15dp"
+                android:fadingEdge="horizontal|vertical"
+                android:focusable="true"
+                android:foregroundGravity="left|right"
+                android:minWidth="150dp"
+                android:padding="50dp"
+                android:scrollbarSize="80dp"
+                android:text="@string/tab_home" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/originals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_originals" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/activity_horizontal_margin"
+                android:text="@string/tab_social" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/comedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_comedy" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_movie" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/reality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_reality" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/Art"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_art" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_Music" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_Story" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/iconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_iconnect" />
+
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main2" />
+
+    <Button
+        android:id="@+id/RegisterButton2"
+        style="@style/MyCustomFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="#80000000"
+        android:text="@string/talent_application_form"
+        android:textSize="20sp" />
+
+</android.support.design.widget.CoordinatorLayout>

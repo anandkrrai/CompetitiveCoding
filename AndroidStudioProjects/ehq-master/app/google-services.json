@@ -1,0 +1,246 @@
+{
+  "project_info": {
+    "project_number": "15022324019",
+    "firebase_url": "https://entertainmenthq-36d60.firebaseio.com",
+    "project_id": "entertainmenthq-36d60",
+    "storage_bucket": "entertainmenthq-36d60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15022324019:android:612a672ef12ba8a8",
+        "android_client_info": {
+          "package_name": "com.ehq.ehq.ehq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15022324019-nb5bh3lo3l1ep6i8asjujibe67fpb9vt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ehq.ehq.ehq",
+            "certificate_hash": "f70645e28f4df9841544361ee770fe9b83f2d84b"
+          }
+        },
+        {
+          "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIfC7aCLuHUt3emNm-ZlOxe7DaQfU14cI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "15022324019-lrcs6a4jpocp3amv6rferrrnr7bhkve9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iosapp.New"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15022324019:android:0da38dc45d6b782e",
+        "android_client_info": {
+          "package_name": "com.ehq.ehqfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15022324019-9hdjf51tq5rffu017n2e18odb8014kop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ehq.ehqfinal",
+            "certificate_hash": "f2f2bba158bb06894d9909e84d18304d8e45f808"
+          }
+        },
+        {
+          "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIfC7aCLuHUt3emNm-ZlOxe7DaQfU14cI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "15022324019-lrcs6a4jpocp3amv6rferrrnr7bhkve9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iosapp.New"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15022324019:android:8256a07774375989",
+        "android_client_info": {
+          "package_name": "com.ehq.entertainmenthq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15022324019-d4h77pfg0n36v7rhpahgs481g4ud1q4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ehq.entertainmenthq",
+            "certificate_hash": "f2f2bba158bb06894d9909e84d18304d8e45f808"
+          }
+        },
+        {
+          "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIfC7aCLuHUt3emNm-ZlOxe7DaQfU14cI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "15022324019-lrcs6a4jpocp3amv6rferrrnr7bhkve9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iosapp.New"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15022324019:android:1b16823dfad04810",
+        "android_client_info": {
+          "package_name": "com.ehq.moviefragmenttest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15022324019-s8katpnistm0p2nshj4undaucpuksgda.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ehq.moviefragmenttest",
+            "certificate_hash": "f2f2bba158bb06894d9909e84d18304d8e45f808"
+          }
+        },
+        {
+          "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIfC7aCLuHUt3emNm-ZlOxe7DaQfU14cI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "15022324019-lrcs6a4jpocp3amv6rferrrnr7bhkve9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iosapp.New"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15022324019:android:d6f0d6092afba45f",
+        "android_client_info": {
+          "package_name": "com.example.anand.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15022324019-clsu15kcis4c552obv55lrufgp30h0js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIfC7aCLuHUt3emNm-ZlOxe7DaQfU14cI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
