@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RegisterActivities.genericDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/detailed_information"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="35sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/GenericFormalEducationDisplay"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/text_padding_left"
+                    android:layout_weight="1"
+                    android:text="@string/formal_education"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/GenericFormalEducation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/name_of_insitite"
+                    android:inputType="textMultiLine"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/text_padding_left"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/text_padding_left"
+                    android:text="@string/work_experience"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/GenericWorkExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/work_experience"
+                    android:inputType="textMultiLine"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="271dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/text_padding_left"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/text_padding_left"
+                    android:text="@string/sample_work"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/GenericWorkLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/link_to_sample_work"
+                        android:inputType="textMultiLine"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <EditText
+                        android:id="@+id/optionalLink1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:hint="@string/optional_link_1"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <EditText
+                        android:id="@+id/optionalLink2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:hint="@string/optional_link_2"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/darker_gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/genericArtistUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/boundary_button"
+                    android:text="@string/upload"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray" />
+
+
+
+            <Button
+                android:id="@+id/GenericButtonSendData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/boundary_button"
+                android:text="@string/payAndSubmit"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

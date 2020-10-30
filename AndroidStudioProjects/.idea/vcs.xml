@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/WorkafyApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chat_module" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chatbot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kdeconnect-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/magnum_app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ud839_CustomAdapter_Example" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ud843-QuakeReport" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ud851-Exercises" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/video-quickstart-android" vcs="Git" />
+  </component>
+</project>

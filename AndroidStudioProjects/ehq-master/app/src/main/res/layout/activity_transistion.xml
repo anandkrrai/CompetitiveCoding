@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.app.MediaRouteButton
+            android:id="@+id/media_route_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/transistionImageMovie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/transistionImageBack"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:foreground="@drawable/background_gradient_with_transparentimage"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backdrop_w600_thor" />
+
+        <ImageView
+            android:id="@+id/transistionImageMovie"
+            android:layout_width="121dp"
+            android:layout_height="173dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="160dp"
+            android:scaleType="fitXY"
+            android:transitionName="imageTransistions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backtest" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transistionImageMovie"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/transistionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                style="@style/MyCustomFontStyle"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:paddingLeft="@dimen/text_padding_left"
+                        android:text="@string/duration"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/transitionDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:paddingRight="@dimen/text_padding_left"
+                        android:text="5 min"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:paddingLeft="@dimen/text_padding_left"
+                        android:text="Director : "
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/transistionDirector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:paddingRight="@dimen/text_padding_left"
+                        android:text="TextView"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:paddingLeft="@dimen/text_padding_left"
+                        android:text="Release Date : "
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/transistionReleaseDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:paddingRight="@dimen/text_padding_left"
+                        android:text="TextView"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/transistionSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/text_padding_left"
+                android:paddingRight="@dimen/text_padding_left"
+                android:text="TextView"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <Button
+                android:id="@+id/transistionWatchTrailr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_padding_left"
+                android:layout_marginStart="@dimen/text_padding_left"
+                android:background="@drawable/spotify_button"
+                android:text="Watch Trailer"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/transistionWatchNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="@dimen/text_padding_left"
+                android:layout_marginStart="@dimen/text_padding_left"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spotify_button"
+                android:text="Watch Now"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider34"
+                app:layout_constraintVertical_bias="1.0"
+                tools:layout_editor_absoluteX="164dp" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

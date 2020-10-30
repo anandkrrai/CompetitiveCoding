@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutBottom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#403131"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100sp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/more_info_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/large_text"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="98dp" />
+
+    </ScrollView>
+</LinearLayout>

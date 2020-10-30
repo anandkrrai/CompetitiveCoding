@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/text_padding_left"
+        android:paddingStart="@dimen/text_padding_left"
+        android:paddingTop="@dimen/text_padding_left"
+        android:text="@string/you_want_to_become_a"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/buttonMusicComposer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/text_padding_left"
+        android:layout_marginStart="@dimen/text_padding_left"
+        android:layout_marginTop="@dimen/text_padding_left"
+        android:background="@drawable/boundary_button"
+        android:outlineProvider="bounds"
+        android:paddingEnd="@dimen/text_padding_left"
+        android:paddingStart="@dimen/text_padding_left"
+        android:text="Music Composer"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonSoundEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/text_padding_left"
+        android:layout_marginStart="@dimen/text_padding_left"
+        android:layout_marginTop="@dimen/text_padding_left"
+        android:background="@drawable/boundary_button"
+        android:outlineProvider="bounds"
+        android:paddingEnd="@dimen/text_padding_left"
+        android:paddingStart="@dimen/text_padding_left"
+        android:text="Sound Editor"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonSoundRecordist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/text_padding_left"
+        android:layout_marginStart="@dimen/text_padding_left"
+        android:layout_marginTop="@dimen/text_padding_left"
+        android:background="@drawable/boundary_button"
+        android:outlineProvider="bounds"
+        android:paddingEnd="@dimen/text_padding_left"
+        android:paddingStart="@dimen/text_padding_left"
+        android:text="Sound Recordist"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonFoleyArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/text_padding_left"
+        android:layout_marginStart="@dimen/text_padding_left"
+        android:layout_marginTop="@dimen/text_padding_left"
+        android:background="@drawable/boundary_button"
+        android:outlineProvider="bounds"
+        android:paddingEnd="@dimen/text_padding_left"
+        android:paddingStart="@dimen/text_padding_left"
+        android:text="Foley Artist"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonMusicDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/text_padding_left"
+        android:layout_marginStart="@dimen/text_padding_left"
+        android:layout_marginTop="@dimen/text_padding_left"
+        android:background="@drawable/boundary_button"
+        android:outlineProvider="bounds"
+        android:paddingEnd="@dimen/text_padding_left"
+        android:paddingStart="@dimen/text_padding_left"
+        android:text="Music Director"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
